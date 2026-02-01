@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking | Event Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎟️ Event Booking</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="booking.html" class="active">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<form onsubmit="return validateForm()">
+  <h2>Confirm Your Booking</h2>
+  <input id="name" type="text" placeholder="Your Name" />
+  <input id="email" type="email" placeholder="Your Email" />
+
+  <select id="event">
+    <option value="">Select Event</option>
+    <option>Movie Night</option>
+    <option>Rock Concert</option>
+    <option>Cricket Match</option>
+  </select>
+
+  <input id="tickets" type="number" placeholder="Number of Tickets" />
+  <button type="submit">Confirm Booking</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
